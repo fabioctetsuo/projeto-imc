@@ -9,3 +9,7 @@
 #### aula 09
 
 - Explicação sobre tipos de dados referencia
+
+#### aula 10
+
+- Explicação sobre estrutura de controle if e else
