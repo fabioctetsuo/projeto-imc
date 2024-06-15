@@ -1,19 +1,22 @@
-// tipos de dados primitivos numeros
-let height = 168;
-let weight = 65;
 const conversionFactor = 0.01; // declarar quando explicar que precisa transformar altura de cm para metros
 
-height *= conversionFactor;
+function calculateIMC(person) {
+  let height = person.height;
+  let weight = person.weight;
 
-const imc = weight / (height * height);
+  height *= conversionFactor;
 
-// tipo de dado primitivo string
-const result = "O resultado do IMC é de " + imc;
+  const imc = weight / (height * height);
 
-// tipo de dado booleano
-const isHealth = true;
+  const result = "O resultado do IMC é de " + imc;
+  const isHealthy = true;
 
-// tipo de dado nulo
-const isNull = null;
+  return {
+    name: person.name,
+    imc,
+    result,
+    isHealthy,
+  };
+}
 
-console.log(result);
+console.log(calculateIMC({ name: "Fabio", height: 168, weight: 65 }));
